@@ -1,0 +1,127 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/tabBar/Home",
+			"style": {
+				"navigationBarTitleText": "资料库"
+			}
+		},
+		{
+			"path": "pages/tabBar/Mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tabBar/Music",
+			"style": {
+				"navigationBarTitleText": "音乐广场",
+				"backgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/tabBar/Weather",
+			"style": {
+				"navigationBarTitleText": "天气",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					// 将回弹属性关掉
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/Weather/cityselect",
+			"style": {
+				"navigationBarTitleText": "城市选择",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/Music/PlaylistDetail/PlaylistDetail",
+			"style": {
+				"navigationBarTitleText": "精品歌单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "components/MusicPlayer/MusicPlayer",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					// 将回弹属性关掉
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "components/MusicPlayer/MusicLyric",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Music/MusicList/MusicList",
+			"style": {
+				"navigationBarTitleText": "播放列表",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"app-plus": {
+			"background": "#FFFFFF"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#409EFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabBar/Home",
+				"iconPath": "static/assets/icon/Home.png",
+				"selectedIconPath": "static/assets/icon/Home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/Music",
+				"iconPath": "static/assets/icon/Music.png",
+				"selectedIconPath": "static/assets/icon/Music_active.png",
+				"text": "音乐广场"
+			},
+			{
+				"pagePath": "pages/tabBar/Weather",
+				"iconPath": "static/assets/icon/Weather.png",
+				"selectedIconPath": "static/assets/icon/Weather_active.png",
+				"text": "天气"
+			},
+			{
+				"pagePath": "pages/tabBar/Mine",
+				"iconPath": "static/assets/icon/Mine.png",
+				"selectedIconPath": "static/assets/icon/Mine_active.png",
+				"text": "我的"
+			}
+		]
+	}
+}
